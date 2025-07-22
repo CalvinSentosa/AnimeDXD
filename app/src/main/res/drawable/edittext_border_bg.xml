@@ -9,7 +9,7 @@
         android:color="#FFFFFF" /> <!-- White border -->
 
     <!-- Rounded corners -->
-    <corners android:radius="8dp" />
+    <corners android:radius="10dp" />
 
     <!-- Padding for text -->
     <padding
