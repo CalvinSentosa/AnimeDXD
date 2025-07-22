@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     tools:context=".MainActivity">
 
     <!-- Gradient Background -->
@@ -15,7 +16,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/BackgroundImage"
+        android:src="@drawable/background_image"
         android:alpha="0.2"
         android:scaleType="centerCrop" />
 
@@ -30,7 +31,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/Logo_AnimeDXD"
+            android:src="@drawable/logo_anime_dxd"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp">
         </ImageView>
@@ -54,17 +55,18 @@
             android:textSize="14sp"
             android:textColor="@color/white"
             android:layout_marginBottom="32dp"
-            android:paddingLeft="65dp"
-            android:paddingRight="65dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
             android:lineSpacingExtra="4dp"
             android:textStyle="italic"/>
 
         <!-- Username -->
         <EditText
+            android:id="@+id/usernameTxt"
             android:layout_width="300dp"
             android:layout_height="48dp"
             android:hint="Username"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_gravity="center"
             android:textColorHint="#AAAAAA"
             android:layout_marginBottom="16dp"
@@ -72,19 +74,34 @@
 
         <!-- Password -->
         <EditText
+            android:id="@+id/passwordTxt"
             android:layout_width="300dp"
             android:layout_height="48dp"
             android:hint="Password"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_gravity="center"
             android:textColorHint="#AAAAAA"
             android:inputType="textPassword"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="70dp"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/edittext_border_bg"/>
+
+        <TextView
+            android:id="@+id/errorTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@color/red"
+            android:layout_marginBottom="32dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:lineSpacingExtra="4dp" />
 
         <!-- Login Button -->
         <Button
+            android:id="@+id/submitBtn"
             android:layout_width="200dp"
             android:layout_height="48dp"
             android:text="Login"

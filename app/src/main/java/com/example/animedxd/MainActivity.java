@@ -1,14 +1,29 @@
 package com.example.animedxd;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.Switch;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private EditText usernameTxt, passwordTxt;
+    private Button submitBtn;
+
+    private String extractString(EditText e){
+        return e.getText().toString();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +35,39 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        submitBtn = findViewById(R.id.submitBtn);
+        usernameTxt = findViewById(R.id.usernameTxt);
+        passwordTxt = findViewById(R.id.passwordTxt);
+
+        submitBtn.setOnClickListener(v -> {
+            String usernameString = extractString(usernameTxt);
+            String passwordString = extractString(passwordTxt);
+            TextView errorTxt = findViewById(R.id.errorTxt);
+
+            if(usernameString.isEmpty() && passwordString.isEmpty()){
+                errorTxt.setText("Username And Password Cannot Be Empty");
+                return;
+            }
+            if(usernameString.isEmpty()){
+                errorTxt.setText("Username Cannot Be Empty");
+                return;
+            }
+            if(passwordString.isEmpty()){
+                errorTxt.setText("Password Cannot Be Empty");
+                return;
+            }
+            if(usernameString.length() < 5 || usernameString.length() > 10){
+                errorTxt.setText("The Letters In The Username Must Be A Minimum Of 5 And Maximum Of 10 Characters.");
+                return;
+            }
+
+            // If all validations pass, clear any previous error
+            errorTxt.setText("");
+        });
+    }
+
+    private void sendToast(String message){
+        Toast.makeText(this, "message", Toast.LENGTH_SHORT).show();
     }
 }
