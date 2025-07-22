@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Gradient Background -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background" />
+
+    <!-- Semi-transparent Image Overlay (40% opacity) -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/BackgroundImage"
+        android:alpha="0.2"
+        android:scaleType="centerCrop" />
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Logo/Title -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/Logo_AnimeDXD"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="24dp"
+            android:textStyle="bold"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Come on, register to enjoy the excitement of watching anime without ads"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="32dp"
+            android:paddingLeft="65dp"
+            android:paddingRight="65dp"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="italic"/>
+
+        <!-- Username -->
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:hint="Username"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_border_bg"/>
+
+        <!-- Password -->
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textColorHint="#AAAAAA"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/edittext_border_bg"/>
+
+        <!-- Login Button -->
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:text="Login"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:background="@drawable/button_bg"/>
+    </LinearLayout>
+</FrameLayout>

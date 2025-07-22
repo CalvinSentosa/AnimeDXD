@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid Color -->
+    <solid android:color="@color/white"/> <!-- Vibrant orange color -->
+
+    <!-- Border Radius -->
+    <corners android:radius="8dp"/> <!-- Half of button height for pill shape -->
+
+    <!-- Optional: Add elevation shadow -->
+    <padding
+        android:left="8dp"
+        android:top="4dp"
+        android:right="8dp"
+        android:bottom="6dp"/>
+</shape>
