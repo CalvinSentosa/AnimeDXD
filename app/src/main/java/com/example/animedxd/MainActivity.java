@@ -1,17 +1,14 @@
 package com.example.animedxd;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioGroup;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SwitchCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -29,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -64,10 +61,12 @@ public class MainActivity extends AppCompatActivity {
 
             // If all validations pass, clear any previous error
             errorTxt.setText("");
-        });
-    }
 
-    private void sendToast(String message){
-        Toast.makeText(this, "message", Toast.LENGTH_SHORT).show();
+            // Redirect to Home
+            Intent intent = new Intent(MainActivity.this, Home.class);
+            intent.putExtra("USERNAME", usernameString); // Pass the username
+            startActivity(intent);
+            finish(); // Close the login screen
+        });
     }
 }

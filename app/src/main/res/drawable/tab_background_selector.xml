@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected tab -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#33FF84A1"/> <!-- 80% opacity -->
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+
+    <!-- Unselected tab -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#66FFFFFF"/> <!-- 40% opacity white -->
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+</selector>
