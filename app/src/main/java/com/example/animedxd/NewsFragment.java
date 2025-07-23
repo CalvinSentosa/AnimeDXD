@@ -19,14 +19,13 @@ public class NewsFragment extends Fragment {
 
     private ViewPager2 carouselViewPager;
     private Handler sliderHandler = new Handler(Looper.getMainLooper());
-    private int currentIndex = 0;
 
     private final Runnable sliderRunnable = new Runnable() {
         @Override
         public void run() {
             if (carouselViewPager != null) {
-                currentIndex = (currentIndex + 1) % 5;
-                carouselViewPager.setCurrentItem(currentIndex, true);
+                int nextItem = carouselViewPager.getCurrentItem() + 1;
+                carouselViewPager.setCurrentItem(nextItem, true);
                 sliderHandler.postDelayed(this, 5000);
             }
         }
@@ -52,11 +51,32 @@ public class NewsFragment extends Fragment {
                 R.drawable.slide5
         );
 
-        carouselViewPager.setAdapter(new CarouselAdapter(imageList));
+        CarouselAdapter adapter = new CarouselAdapter(imageList);
+        carouselViewPager.setAdapter(adapter);
         carouselViewPager.setOffscreenPageLimit(1);
 
-        // Start auto-scroll
+        // Start from a large enough middle to allow both directions
+        int startPosition = Integer.MAX_VALUE / 2;
+        startPosition = startPosition - (startPosition % imageList.size()); // make it aligned
+        carouselViewPager.setCurrentItem(startPosition, false);
+
+        // Prevent parent from intercepting touch (for tab swipe conflict)
+        carouselViewPager.getChildAt(0).setOnTouchListener((v, event) -> {
+            carouselViewPager.getParent().requestDisallowInterceptTouchEvent(true);
+            return false;
+        });
+
+        // Auto-scroll every 5 seconds
         sliderHandler.postDelayed(sliderRunnable, 5000);
+
+        // Reset auto-scroll after manual swipe
+        carouselViewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                sliderHandler.removeCallbacks(sliderRunnable);
+                sliderHandler.postDelayed(sliderRunnable, 5000);
+            }
+        });
     }
 
     @Override
@@ -65,3 +85,4 @@ public class NewsFragment extends Fragment {
         sliderHandler.removeCallbacks(sliderRunnable);
     }
 }
+

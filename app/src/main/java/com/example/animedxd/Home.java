@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.core.graphics.Insets;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
@@ -43,6 +44,26 @@ public class Home extends AppCompatActivity {
                     }
                 }
         ).attach();
+
+//        BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
+//
+//        bottomNav.setOnItemSelectedListener(item -> {
+//            switch (item.getItemId()) {
+//                case R.id.nav_home:
+//                    // Stay here
+//                    return true;
+//                case R.id.nav_news:
+//                    // You can change tab to News
+//                    viewPager.setCurrentItem(0);
+//                    return true;
+//                case R.id.nav_profile:
+//                    // Switch to Profile tab, or start new activity
+//                    viewPager.setCurrentItem(1);
+//                    return true;
+//            }
+//            return false;
+//        });
+
 
     }
 }
