@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             errorTxt.setText("");
 
             // Redirect to Home
-            Intent intent = new Intent(MainActivity.this, Home.class);
+            Intent intent = new Intent(MainActivity.this, Structure.class);
             intent.putExtra("USERNAME", usernameString); // Pass the username
             startActivity(intent);
             finish(); // Close the login screen

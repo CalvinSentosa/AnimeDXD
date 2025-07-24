@@ -44,26 +44,5 @@ public class Home extends AppCompatActivity {
                     }
                 }
         ).attach();
-
-//        BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
-//
-//        bottomNav.setOnItemSelectedListener(item -> {
-//            switch (item.getItemId()) {
-//                case R.id.nav_home:
-//                    // Stay here
-//                    return true;
-//                case R.id.nav_news:
-//                    // You can change tab to News
-//                    viewPager.setCurrentItem(0);
-//                    return true;
-//                case R.id.nav_profile:
-//                    // Switch to Profile tab, or start new activity
-//                    viewPager.setCurrentItem(1);
-//                    return true;
-//            }
-//            return false;
-//        });
-
-
     }
 }
