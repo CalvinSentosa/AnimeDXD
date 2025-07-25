@@ -86,11 +86,11 @@ public class ListFragment extends Fragment {
         listRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         // Example data for the list
-        List<Manga> mangaList = new ArrayList<>();
-        mangaList.add(new Manga("DEMON SLAYER", "Fantasi Gelap", "Demon Slayer, atau Kimetsu no Yaiba...", R.drawable.demonslayer));
-        mangaList.add(new Manga("HAIKYUU", "Komedi", "Haikyuu bercerita tentang Shoyo Hinata...", R.drawable.haikyuu));
-        mangaList.add(new Manga("JUJUTSU KAISEN", "Fantasi Gelap", "Cerita tentang kutukan dan penyihir...", R.drawable.jujutsu));
-        listRecyclerView.setAdapter(new MangaAdapter(getContext(), mangaList));
+        List<AnimeItem> animeList = new ArrayList<>();
+        animeList.add(new AnimeItem(R.drawable.demonslayer, "DEMON SLAYER", 4, "Demon Slayer, atau Kimetsu no Yaiba...", "Horror"));
+        animeList.add(new AnimeItem(R.drawable.haikyuu, "HAIKYUU", 4, "Haikyuu bercerita tentang Shoyo Hinata...", "Sport"));
+        animeList.add(new AnimeItem(R.drawable.jujutsu, "JUJUTSU KAISEN", 4, "Cerita tentang kutukan dan penyihir...", "Action"));
+        listRecyclerView.setAdapter(new AnimeListAdapter(animeList));
 
         return view;
     }
