@@ -16,8 +16,20 @@ public class AnimeItem {
         return imageResId;
     }
 
+    public int getRating() {
+        return rating;
+    }
+
     public String getTitle() {
         return title;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }
 

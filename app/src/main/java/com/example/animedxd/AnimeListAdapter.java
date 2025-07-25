@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-//
+
 import java.util.List;
 
 public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.AnimeViewHolder> {
@@ -30,6 +30,9 @@ public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.Anim
         AnimeItem item = animeList.get(position);
         holder.titleText.setText(item.getTitle());
         holder.imageView.setImageResource(item.getImageResId());
+        holder.ratingText.setText("Rating: " + item.getRating());
+        holder.genreText.setText(item.getGenre());
+        holder.descriptionText.setText(item.getDescription());
     }
 
     @Override
@@ -39,13 +42,15 @@ public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.Anim
 
     public static class AnimeViewHolder extends RecyclerView.ViewHolder {
         ImageView imageView;
-        TextView titleText;
+        TextView titleText, ratingText, genreText, descriptionText;
 
         public AnimeViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.animeImage);
             titleText = itemView.findViewById(R.id.animeTitle);
+            ratingText = itemView.findViewById(R.id.Rating);
+            genreText = itemView.findViewById(R.id.Genre);
+            descriptionText = itemView.findViewById(R.id.Description);
         }
     }
 }
-
