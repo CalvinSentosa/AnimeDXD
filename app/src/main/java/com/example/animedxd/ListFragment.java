@@ -80,7 +80,7 @@ public class ListFragment extends Fragment {
             }
         });
 
-
+//
         // Setup list
         RecyclerView listRecyclerView = view.findViewById(R.id.animeRecyclerView);
         listRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

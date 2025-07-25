@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Anime Description"
-            android:textSize="12sp"
+            android:textSize="11sp"
             android:textColor="@android:color/white"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="16dp" />

@@ -11,7 +11,7 @@ public class AnimeItem {
         this.description = description;
         this.genre = genre;
     }
-
+    //
     public int getImageResId() {
         return imageResId;
     }
