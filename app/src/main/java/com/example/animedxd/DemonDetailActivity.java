@@ -16,12 +16,15 @@ public class DemonDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.demon_activity_detail);
 
-        // Receive passed data (optional use in layout)
-        String title = getIntent().getStringExtra("title");
-        int imageResId = getIntent().getIntExtra("imageResId", R.drawable.demonslayer); // default fallback
+        ViewPager2 viewPager = findViewById(R.id.viewPager);
+        TabLayout tabLayout = findViewById(R.id.tabLayout);
 
-        // Use this title/imageResId in any fragment if needed
-        // e.g., pass to fragments via bundle if dynamic
+        DemonDetailPageAdapter adapter = new DemonDetailPageAdapter(this);
+        viewPager.setAdapter(adapter);
+
+        new TabLayoutMediator(tabLayout, viewPager,
+                (tab, position) -> tab.setText(titles[position])
+        ).attach();
     }
 
 }
