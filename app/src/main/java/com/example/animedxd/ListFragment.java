@@ -90,8 +90,7 @@ public class ListFragment extends Fragment {
         animeList.add(new AnimeItem(R.drawable.demonslayer, "DEMON SLAYER", 4, "Demon Slayer, atau Kimetsu no Yaiba...", "Horror"));
         animeList.add(new AnimeItem(R.drawable.haikyuu, "HAIKYUU", 4, "Haikyuu bercerita tentang Shoyo Hinata...", "Sport"));
         animeList.add(new AnimeItem(R.drawable.jujutsu, "JUJUTSU KAISEN", 4, "Cerita tentang kutukan dan penyihir...", "Action"));
-        listRecyclerView.setAdapter(new AnimeListAdapter(animeList));
-
+        listRecyclerView.setAdapter(new AnimeListAdapter(requireContext(), animeList));
         return view;
     }
 

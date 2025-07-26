@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEMON SLAYER"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul: Demon Slayer: Kimetsu no Yaiba\nGenre: Action, Supernatural, Dark Fantasy\nTanggal Rilis: 6 April 2019\nSutradara: Haruo Sotozaki\nCerita Oleh: Koyoharu Gotouge\nKarakter: Tanjiro Kamado, Nezuko Kamado, Zenitsu Agatsuma, Inosuke Hashibira, Giyu Tomioka\nDurasi: Sekitar 23 menit per episode"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:background="@drawable/rounded_image"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sample YouTube thumbnail or embedded video (WebView or YouTubePlayerView) -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/slide1"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Bottom image thumbnails -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/slide2"
+                android:scaleType="centerCrop"
+                android:layout_margin="4dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/slide3"
+                android:scaleType="centerCrop"
+                android:layout_margin="4dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/slide4"
+                android:scaleType="centerCrop"
+                android:layout_margin="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

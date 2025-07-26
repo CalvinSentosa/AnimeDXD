@@ -1,38 +1,52 @@
 package com.example.animedxd;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.AnimeViewHolder> {
+public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.ViewHolder> {
+
+    private Context context;
     private List<AnimeItem> animeList;
 
-    public AnimeListAdapter(List<AnimeItem> animeList) {
+    public AnimeListAdapter(Context context, List<AnimeItem> animeList) {
+        this.context = context;
         this.animeList = animeList;
     }
 
     @NonNull
     @Override
-    public AnimeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_anime, parent, false);
-        return new AnimeViewHolder(view);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.item_anime, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AnimeViewHolder holder, int position) {
-        AnimeItem item = animeList.get(position);
-        holder.titleText.setText(item.getTitle());
-        holder.imageView.setImageResource(item.getImageResId());
-        holder.ratingText.setText("Rating: " + item.getRating());
-        holder.genreText.setText(item.getGenre());
-        holder.descriptionText.setText(item.getDescription());
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        AnimeItem anime = animeList.get(position);
+        holder.animeTitle.setText(anime.getTitle());
+        holder.genre.setText(anime.getGenre());
+        holder.rating.setText(String.valueOf(anime.getRating()));
+        holder.description.setText(anime.getDescription());
+        holder.image.setImageResource(anime.getImageResId());
+
+        // 🔸 Handle click
+        holder.itemView.setOnClickListener(v -> {
+            if (anime.getTitle().equalsIgnoreCase("DEMON SLAYER")) {
+                Intent intent = new Intent(context, DemonDetailActivity.class);
+                intent.putExtra("title", anime.getTitle());
+                intent.putExtra("imageResId", anime.getImageResId());
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -40,17 +54,17 @@ public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.Anim
         return animeList.size();
     }
 
-    public static class AnimeViewHolder extends RecyclerView.ViewHolder {
-        ImageView imageView;
-        TextView titleText, ratingText, genreText, descriptionText;
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        TextView animeTitle, genre, rating, description;
+        ImageView image;
 
-        public AnimeViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.animeImage);
-            titleText = itemView.findViewById(R.id.animeTitle);
-            ratingText = itemView.findViewById(R.id.Rating);
-            genreText = itemView.findViewById(R.id.Genre);
-            descriptionText = itemView.findViewById(R.id.Description);
+            animeTitle = itemView.findViewById(R.id.animeTitle);
+            genre = itemView.findViewById(R.id.Genre);
+            rating = itemView.findViewById(R.id.Rating);
+            description = itemView.findViewById(R.id.Description);
+            image = itemView.findViewById(R.id.animeImage);
         }
     }
 }
