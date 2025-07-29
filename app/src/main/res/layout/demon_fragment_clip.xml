@@ -11,25 +11,16 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DEMON SLAYER"
-            android:textColor="@android:color/white"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"/>
-
-        <TextView
+            android:id="@+id/framedText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/framed_background"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
             android:text="Judul: Demon Slayer: Kimetsu no Yaiba\nGenre: Action, Supernatural, Dark Fantasy\nTanggal Rilis: 6 April 2019\nSutradara: Haruo Sotozaki\nCerita Oleh: Koyoharu Gotouge\nKarakter: Tanjiro Kamado, Nezuko Kamado, Zenitsu Agatsuma, Inosuke Hashibira, Giyu Tomioka\nDurasi: Sekitar 23 menit per episode"
-            android:textColor="@android:color/white"
-            android:textSize="14sp"
-            android:lineSpacingExtra="4dp"
-            android:background="@drawable/rounded_image"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp"/>
+            android:elevation="4dp" />
 
         <!-- Sample YouTube thumbnail or embedded video (WebView or YouTubePlayerView) -->
         <ImageView

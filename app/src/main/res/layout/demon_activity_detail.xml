@@ -31,19 +31,28 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/demonslayer" />
 
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:src="@drawable/arrow_back">
+            </ImageView>
+
             <TextView
                 android:id="@+id/titleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Movie Review"
+                android:text="Movie\nReview"
                 android:textColor="@android:color/white"
                 android:textSize="32sp"
                 android:textStyle="bold"
-                android:layout_gravity="center"
                 android:shadowColor="#80000000"
                 android:shadowDx="2"
                 android:shadowDy="2"
-                android:shadowRadius="4" />
+                android:shadowRadius="4"
+                android:paddingLeft="20dp"
+                android:paddingTop="50dp"/>
         </FrameLayout>
 
         <!-- Anime title -->
