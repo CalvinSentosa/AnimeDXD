@@ -27,22 +27,6 @@ public class Home extends AppCompatActivity {
             return insets;
         });
 
-        TextView welcomeText = findViewById(R.id.welcomeText);
-        String username = getIntent().getStringExtra("USERNAME");
-        welcomeText.setText("Welcome, " + username);
-
-        ImageView iconMenu = findViewById(R.id.iconMenu);
-        LinearLayout logoutContainer = findViewById(R.id.logoutContainer);
-
-        iconMenu.setOnClickListener(v -> {
-            if (logoutContainer.getVisibility() == View.VISIBLE) {
-                logoutContainer.setVisibility(View.GONE);
-            } else {
-                logoutContainer.setVisibility(View.VISIBLE);
-            }
-        });
-
-
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         ViewPager2 viewPager = findViewById(R.id.viewPager);
 
