@@ -41,46 +41,37 @@ public class ListFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.listpage, container, false);
 
-        // Setup carousel
-        carouselViewPager = view.findViewById(R.id.carouselViewPager2);
-        List<Integer> imageList = Arrays.asList(
-                R.drawable.slide1,
-                R.drawable.slide2,
-                R.drawable.slide3,
-                R.drawable.slide4,
-                R.drawable.slide5
-        );
-        CarouselAdapter carouselAdapter = new CarouselAdapter(imageList);
-        carouselViewPager.setAdapter(carouselAdapter);
-        carouselViewPager.setOffscreenPageLimit(1);
+        ViewPager2 carouselViewPager = view.findViewById(R.id.carouselViewPager2);
+        List<Integer> imageList = Arrays.asList(R.drawable.slide1, R.drawable.slide2, R.drawable.slide3, R.drawable.slide4, R.drawable.slide5);
+        CarouselAdapter adapter = new CarouselAdapter(imageList);
+        carouselViewPager.setAdapter(adapter);
 
+        // Set fake middle position
         int startPosition = Integer.MAX_VALUE / 2;
+        // Align to imageList size
         startPosition = startPosition - (startPosition % imageList.size());
         carouselViewPager.setCurrentItem(startPosition, false);
 
-        CarouselAdapter adapter = new CarouselAdapter(imageList);
-        carouselViewPager.setAdapter(adapter);
-        carouselViewPager.setOffscreenPageLimit(1);
+        // Optional: Auto-scroll after delay
+        Handler sliderHandler = new Handler(Looper.getMainLooper());
+        Runnable sliderRunnable = () -> {
+            int nextItem = carouselViewPager.getCurrentItem() + 1;
+            carouselViewPager.setCurrentItem(nextItem);
+        };
 
-        // Prevent parent from intercepting touch (for tab swipe conflict)
-        carouselViewPager.getChildAt(0).setOnTouchListener((v, event) -> {
-            carouselViewPager.getParent().requestDisallowInterceptTouchEvent(true);
-            return false;
-        });
-
-        // Auto-scroll every 5 seconds
+        // Start auto-scroll after 5 seconds
         sliderHandler.postDelayed(sliderRunnable, 5000);
 
-        // Reset auto-scroll after manual swipe
+        // Restart handler after manual scroll
         carouselViewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
+                super.onPageSelected(position);
                 sliderHandler.removeCallbacks(sliderRunnable);
                 sliderHandler.postDelayed(sliderRunnable, 5000);
             }
         });
 
-//
         // Setup list
         RecyclerView listRecyclerView = view.findViewById(R.id.animeRecyclerView);
         listRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
