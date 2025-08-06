@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/transparent"
-
     android:padding="16dp">
 
     <LinearLayout
@@ -11,59 +10,223 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/title"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DEMON SLAYER"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"/>
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4.8"
-            android:textSize="40sp"
-            android:textColor="@android:color/white"
-            android:layout_gravity="center"/>
+            <!-- Rating breakdown -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp">
 
-        <!-- You can add rating bars and reviews dynamically -->
-        <!-- Here's a sample review layout -->
+                <!-- Bar for 5 to 1 stars -->
+                <!-- 5 Bintang -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ProgressBar
+                        android:layout_width="260dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:progress="90"
+                        android:max="100"
+                        android:progressDrawable="@drawable/rating_bar_drawable"
+                        style="?android:attr/progressBarStyleHorizontal" />
+                </LinearLayout>
+
+                <!-- 4 bintang -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:progress="60"
+                        android:max="100"
+                        android:progressDrawable="@drawable/rating_bar_drawable"
+                        style="?android:attr/progressBarStyleHorizontal" />
+                </LinearLayout>
+
+                <!-- 4 bintang -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:progress="50"
+                        android:max="100"
+                        android:progressDrawable="@drawable/rating_bar_drawable"
+                        style="?android:attr/progressBarStyleHorizontal" />
+                </LinearLayout>
+
+                <!-- 4 bintang -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:progress="40"
+                        android:max="100"
+                        android:progressDrawable="@drawable/rating_bar_drawable"
+                        style="?android:attr/progressBarStyleHorizontal" />
+                </LinearLayout>
+
+                <!-- 4 bintang -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ProgressBar
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:progress="30"
+                        android:max="100"
+                        android:progressDrawable="@drawable/rating_bar_drawable"
+                        style="?android:attr/progressBarStyleHorizontal" />
+                </LinearLayout>
+
+                <!-- Tambahkan bar untuk 3, 2, 1 seperti di atas -->
+            </LinearLayout>
+            <!-- Overall rating -->
+            <TextView
+                android:id="@+id/overallRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.8"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <!-- User comments -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/rounded_image"
-            android:padding="12dp">
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="8dp"/>
-
-            <TextView
-                android:layout_width="0dp"
+            <!-- Repeat this block for each review -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Saya menontonnya kemarin. Jujur saja..."
-                android:textColor="@android:color/white"
-                android:textSize="14sp"/>
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/rounded_image">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jujutsu"
+                    android:layout_marginEnd="8dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:isIndicator="true"
+                        android:stepSize="1"
+                        android:scaleX="1"
+                        android:scaleY="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Saya menontonnya kemarin. Jujur saja..."
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Tambahkan komentar lain di sini -->
         </LinearLayout>
 
-        <!-- Add more similar layouts or use RecyclerView if dynamic -->
-
+        <!-- Add Button -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add"
             android:layout_gravity="center"
             android:layout_marginTop="24dp"
-            android:backgroundTint="@android:color/holo_blue_light"
+            android:backgroundTint="@android:color/holo_red_dark"
             android:textColor="@android:color/white"/>
     </LinearLayout>
 </ScrollView>
