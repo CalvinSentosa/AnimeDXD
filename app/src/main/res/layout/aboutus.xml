@@ -18,18 +18,40 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Menu bar -->
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/iconMenu"
+                android:layout_marginTop="10dp"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="30dp"
-                android:src="@drawable/icon_menu" />
+                android:src="@drawable/icon_menu">
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/logoutContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGOUT"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <!-- Welcome text -->
@@ -37,13 +59,13 @@
             android:id="@+id/welcomeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome, [Nama]"
-            android:textSize="28sp"
-            android:textColor="#000000"
+            android:text="Welcome, Calvin"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textColor="@color/white"
             android:textStyle="bold"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="35dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
 
         <!-- Logo image -->
         <ImageView
