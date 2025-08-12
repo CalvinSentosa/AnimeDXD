@@ -45,6 +45,26 @@ public class AnimeListAdapter extends RecyclerView.Adapter<AnimeListAdapter.View
                 intent.putExtra("title", anime.getTitle());
                 intent.putExtra("imageResId", anime.getImageResId());
                 context.startActivity(intent);
+            } else if (anime.getTitle().equalsIgnoreCase("HUNTER X HUNTER")) {
+                Intent intent = new Intent(context, HunterDetailActivity.class);
+                intent.putExtra("title", anime.getTitle());
+                intent.putExtra("imageResId", anime.getImageResId());
+                context.startActivity(intent);
+            } else if (anime.getTitle().equalsIgnoreCase("ONE PUNCH MAN")) {
+                Intent intent = new Intent(context, OneDetailActivity.class);
+                intent.putExtra("title", anime.getTitle());
+                intent.putExtra("imageResId", anime.getImageResId());
+                context.startActivity(intent);
+            } else if (anime.getTitle().equalsIgnoreCase("JUJUTSU KAISEN")) {
+                Intent intent = new Intent(context, JjkDetailActivity.class);
+                intent.putExtra("title", anime.getTitle());
+                intent.putExtra("imageResId", anime.getImageResId());
+                context.startActivity(intent);
+            } else if (anime.getTitle().equalsIgnoreCase("HAIKYU")) {
+                Intent intent = new Intent(context, HaikyuDetailActivity.class);
+                intent.putExtra("title", anime.getTitle());
+                intent.putExtra("imageResId", anime.getImageResId());
+                context.startActivity(intent);
             }
         });
     }

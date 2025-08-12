@@ -24,6 +24,10 @@
         <activity android:name=".Home" />
         <activity android:name=".Structure" />
         <activity android:name=".DemonDetailActivity"/>
+        <activity android:name=".HunterDetailActivity"/>
+        <activity android:name=".OneDetailActivity"/>
+        <activity android:name=".JjkDetailActivity"/>
+        <activity android:name=".HaikyuDetailActivity"/>
     </application>
 
 </manifest>

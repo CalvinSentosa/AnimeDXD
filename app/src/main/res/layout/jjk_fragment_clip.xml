@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/framedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/framed_background"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:text="Judul: Demon Slayer: Kimetsu no Yaiba\nGenre: Action, Supernatural, Dark Fantasy\nTanggal Rilis: 6 April 2019\nSutradara: Haruo Sotozaki\nCerita Oleh: Koyoharu Gotouge\nKarakter: Tanjiro Kamado, Nezuko Kamado, Zenitsu Agatsuma, Inosuke Hashibira, Giyu Tomioka\nDurasi: Sekitar 23 menit per episode"
+            android:elevation="4dp" />
+
+        <!-- Sample YouTube thumbnail or embedded video (WebView or YouTubePlayerView) -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/slide1"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Bottom image thumbnails -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/slide2"
+                android:scaleType="centerCrop"
+                android:layout_margin="4dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/slide3"
+                android:scaleType="centerCrop"
+                android:layout_margin="4dp"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/slide4"
+                android:scaleType="centerCrop"
+                android:layout_margin="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

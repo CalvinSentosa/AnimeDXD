@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hunter_background_color">
+
+    <!-- Blurry background image for entire screen -->
+    <ImageView
+        android:id="@+id/background_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/demonslayer"
+        android:alpha="0.3" />
+
+    <!-- Overlaying content -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Top Image with "Movie Review" text -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- ImageView as background -->
+                <ImageView
+                    android:id="@+id/header_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/demonslayer" />
+
+                <!-- Foreground background color (with opacity maybe) -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/hunter_background_color" />
+            </FrameLayout>
+
+
+            <ImageView
+                android:id="@+id/BackButton"
+                android:layout_marginTop="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:src="@drawable/arrow_back">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie\nReview"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:shadowColor="#80000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:paddingLeft="20dp"
+                android:paddingTop="50dp"/>
+        </FrameLayout>
+
+        <!-- Anime title -->
+        <TextView
+            android:id="@+id/animeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HUNTER X HUNTER"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12dp" />
+
+        <!-- Tab Layout -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            app:tabBackground="@drawable/hunter_tab_background"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabTextColor="@color/demon_tab_text_color"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabIndicatorHeight="0dp" />
+
+
+        <!-- ViewPager2 -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

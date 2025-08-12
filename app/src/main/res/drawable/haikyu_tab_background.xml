@@ -1,0 +1,28 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Selected tab background -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#4720AD"/> <!-- Purple fill -->
+            <corners android:radius="50dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#FFFFFF" /> <!-- White border -->
+            <padding android:bottom="2dp" /> <!-- Simulate subtle depth -->
+        </shape>
+    </item>
+
+    <!-- Unselected tab background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <corners android:radius="50dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#FFFFFF" /> <!-- White border -->
+            <!-- Simulate subtle inner shadow via gradient (optional) -->
+            <!-- Add subtle top gradient (optional for glossy look) -->
+        </shape>
+    </item>
+
+</selector>
