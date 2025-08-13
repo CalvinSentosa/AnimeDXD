@@ -29,7 +29,7 @@ public class HunterDetailActivity extends AppCompatActivity {
         ViewPager2 viewPager = findViewById(R.id.viewPager);
         TabLayout tabLayout = findViewById(R.id.tabLayout);
 
-        DemonDetailPageAdapter adapter = new DemonDetailPageAdapter(this);
+        HunterDetailPageAdapter adapter = new HunterDetailPageAdapter(this);
         viewPager.setAdapter(adapter);
 
         new TabLayoutMediator(tabLayout, viewPager,

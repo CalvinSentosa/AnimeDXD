@@ -25,6 +25,16 @@
 
                 <!-- Bar for 5 to 1 stars -->
                 <!-- 5 Bintang -->
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="260dp"
+                    android:layout_height="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="90"
+                    android:progressDrawable="@drawable/rating_bar_drawable" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -39,15 +49,6 @@
                         android:textColor="@android:color/white"
                         android:textSize="12sp" />
 
-                    <ProgressBar
-                        android:layout_width="260dp"
-                        android:layout_height="8dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_weight="1"
-                        android:progress="90"
-                        android:max="100"
-                        android:progressDrawable="@drawable/rating_bar_drawable"
-                        style="?android:attr/progressBarStyleHorizontal" />
                 </LinearLayout>
 
                 <!-- 4 bintang -->

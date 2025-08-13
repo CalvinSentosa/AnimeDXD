@@ -21,7 +21,7 @@ public class MangaFragment extends Fragment {
 
         List<Manga> mangaList = new ArrayList<>();
         mangaList.add(new Manga("DEMON SLAYER", "Fantasi Gelap", "Demon Slayer, atau Kimetsu no Yaiba...", R.drawable.demonslayer));
-        mangaList.add(new Manga("HAIKYUU", "Komedi", "Haikyuu bercerita tentang Shoyo Hinata...", R.drawable.haikyu));
+        mangaList.add(new Manga("HAIKYUU", "Komedi", "Haikyuu bercerita tentang Shoyo Hinata...", R.drawable.haikyuu));
         mangaList.add(new Manga("JUJUTSU KAISEN", "Fantasi Gelap", "Cerita tentang kutukan dan penyihir...", R.drawable.jujutsu));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

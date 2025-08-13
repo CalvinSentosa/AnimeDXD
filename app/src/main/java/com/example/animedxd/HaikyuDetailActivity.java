@@ -29,7 +29,7 @@ public class HaikyuDetailActivity extends AppCompatActivity {
         ViewPager2 viewPager = findViewById(R.id.viewPager);
         TabLayout tabLayout = findViewById(R.id.tabLayout);
 
-        DemonDetailPageAdapter adapter = new DemonDetailPageAdapter(this);
+        HaikyuDetailPageAdapter adapter = new HaikyuDetailPageAdapter(this);
         viewPager.setAdapter(adapter);
 
         new TabLayoutMediator(tabLayout, viewPager,

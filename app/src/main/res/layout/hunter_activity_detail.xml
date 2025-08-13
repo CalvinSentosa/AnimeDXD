@@ -32,11 +32,11 @@
                 <!-- ImageView as background -->
                 <ImageView
                     android:id="@+id/header_image"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
+                    android:layout_width="450dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
                     android:rotation="270"
+                    android:adjustViewBounds="true"
                     android:src="@drawable/hunter" />
 
                 <!-- Foreground background color (with opacity maybe) -->
