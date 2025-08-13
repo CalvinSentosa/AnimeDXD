@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/demonslayer"
+        android:src="@drawable/haikyuu_bg"
         android:alpha="0.3" />
 
     <!-- Overlaying content -->
@@ -34,8 +34,11 @@
                     android:id="@+id/header_image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/demonslayer" />
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:rotation="270"
+                    android:src="@drawable/haikyuu" />
+
 
                 <!-- Foreground background color (with opacity maybe) -->
                 <View

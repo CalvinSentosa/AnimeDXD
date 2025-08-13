@@ -79,7 +79,7 @@ public class ListFragment extends Fragment {
         // Example data for the list
         List<AnimeItem> animeList = new ArrayList<>();
         animeList.add(new AnimeItem(R.drawable.demonslayer, "DEMON SLAYER", 4, "Demon Slayer, atau Kimetsu no Yaiba...", "Horror"));
-        animeList.add(new AnimeItem(R.drawable.haikyuu, "HAIKYU", 4, "Haikyuu bercerita tentang Shoyo Hinata...", "Sport"));
+        animeList.add(new AnimeItem(R.drawable.haikyu, "HAIKYU", 4, "Haikyuu bercerita tentang Shoyo Hinata...", "Sport"));
         animeList.add(new AnimeItem(R.drawable.jujutsu, "JUJUTSU KAISEN", 4, "Cerita tentang kutukan dan penyihir...", "Action"));
         animeList.add(new AnimeItem(R.drawable.demonslayer, "HUNTER X HUNTER", 4, "Hunter x Hunter, adalah hunter x hunter...", "Action"));
         animeList.add(new AnimeItem(R.drawable.demonslayer, "ONE PUNCH MAN", 3, "One punch man adalah anime...", "Comedy"));
