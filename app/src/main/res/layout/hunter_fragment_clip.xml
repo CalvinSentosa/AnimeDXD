@@ -46,21 +46,21 @@ Durasi: Sekitar 23 menit per episode (Total 148 episode)"
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/slide2"
+                android:src="@drawable/hunter1"
                 android:scaleType="centerCrop"
                 android:layout_margin="4dp"/>
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/slide3"
+                android:src="@drawable/hunter2"
                 android:scaleType="centerCrop"
                 android:layout_margin="4dp"/>
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/slide4"
+                android:src="@drawable/hunter3"
                 android:scaleType="centerCrop"
                 android:layout_margin="4dp"/>
         </LinearLayout>
