@@ -19,7 +19,13 @@
             android:background="@drawable/framed_background"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:text="Judul: Demon Slayer: Kimetsu no Yaiba\nGenre: Action, Supernatural, Dark Fantasy\nTanggal Rilis: 6 April 2019\nSutradara: Haruo Sotozaki\nCerita Oleh: Koyoharu Gotouge\nKarakter: Tanjiro Kamado, Nezuko Kamado, Zenitsu Agatsuma, Inosuke Hashibira, Giyu Tomioka\nDurasi: Sekitar 23 menit per episode"
+            android:text="Judul: Hunter x Hunter
+Genre: Action, Adventure, Fantasy, Shounen
+Tanggal Rilis: 2 Oktober 2011
+Sutradara: Hiroshi Kōjina
+Cerita Oleh: Yoshihiro Togashi
+Karakter: Gon Freecss, Killua Zoldyck, Kurapika, Leorio, Hisoka
+Durasi: Sekitar 23 menit per episode (Total 148 episode)"
             android:elevation="4dp" />
 
         <!-- Sample YouTube thumbnail or embedded video (WebView or YouTubePlayerView) -->

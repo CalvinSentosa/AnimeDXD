@@ -19,7 +19,13 @@
             android:background="@drawable/framed_background"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:text="Judul: Demon Slayer: Kimetsu no Yaiba\nGenre: Action, Supernatural, Dark Fantasy\nTanggal Rilis: 6 April 2019\nSutradara: Haruo Sotozaki\nCerita Oleh: Koyoharu Gotouge\nKarakter: Tanjiro Kamado, Nezuko Kamado, Zenitsu Agatsuma, Inosuke Hashibira, Giyu Tomioka\nDurasi: Sekitar 23 menit per episode"
+            android:text="Judul: Jujutsu Kaisen
+Genre: Action, Supernatural, Dark Fantasy
+Tanggal Rilis: 3 Oktober 2020
+Sutradara: Sunghoo Park (Season 1), Shōta Goshozono (Season 2)
+Cerita Oleh: Gege Akutami
+Karakter: Yuji Itadori, Megumi Fushiguro, Nobara Kugisaki, Satoru Gojo, Sukuna
+Durasi: Sekitar 23 menit per episode "
             android:elevation="4dp" />
 
         <!-- Sample YouTube thumbnail or embedded video (WebView or YouTubePlayerView) -->

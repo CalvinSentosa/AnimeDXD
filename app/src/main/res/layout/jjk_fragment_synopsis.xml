@@ -19,7 +19,7 @@
             android:background="@drawable/framed_background"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:text="Setelah kejadian dari seri TV 'Demon Slayer: Kimetsu no Yaiba'..."
+            android:text="Setelah insiden mengerikan yang melibatkan roh terkutuk di sekolahnya, Yuji Itadori, seorang siswa SMA dengan kekuatan fisik luar biasa, terjebak dalam dunia ilmu sihir jujutsu. Untuk menyelamatkan teman-temannya, ia menelan jari terkutuk milik Ryomen Sukuna, roh terkutuk terkuat dalam sejarah, dan menjadi wadah hidup bagi entitas berbahaya tersebut. Dibimbing oleh guru eksentrik Satoru Gojo, Yuji bergabung dengan Sekolah Tinggi Jujutsu bersama rekan barunya, Megumi Fushiguro dan Nobara Kugisaki. Mereka menjalani misi berbahaya untuk menyingkirkan roh-roh terkutuk yang mengancam manusia, sambil menghadapi sorcerer jahat yang berusaha membangkitkan Sukuna sepenuhnya. Pertarungan brutal, teknik sihir mematikan, dan konflik batin menjadi keseharian Yuji, di mana ia harus terus bertarung demi mempertahankan kemanusiaannya."
             android:elevation="4dp" />
 
     </LinearLayout>

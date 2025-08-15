@@ -19,8 +19,15 @@
             android:background="@drawable/framed_background"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:text="Judul: Demon Slayer: Kimetsu no Yaiba\nGenre: Action, Supernatural, Dark Fantasy\nTanggal Rilis: 6 April 2019\nSutradara: Haruo Sotozaki\nCerita Oleh: Koyoharu Gotouge\nKarakter: Tanjiro Kamado, Nezuko Kamado, Zenitsu Agatsuma, Inosuke Hashibira, Giyu Tomioka\nDurasi: Sekitar 23 menit per episode"
-            android:elevation="4dp" />
+            android:text="Judul: Haikyuu!!
+Genre: Sports, Comedy, Drama
+Tanggal Rilis: 6 April 2014
+Sutradara: Susumu Mitsunaka (Season 1–3), Masako Satō (Season 4)
+Cerita Oleh: Haruichi Furudate
+Karakter: Shoyo Hinata, Tobio Kageyama, Daichi Sawamura, Koshi Sugawara, Kei Tsukishima
+Durasi: Sekitar 24 menit per episode (Total 85 episode)
+"
+            android:elevation="4dp"/>
 
         <!-- Sample YouTube thumbnail or embedded video (WebView or YouTubePlayerView) -->
         <ImageView
@@ -40,21 +47,21 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/Haikyuu1"
+                android:src="@drawable/haikyuu1"
                 android:scaleType="centerCrop"
                 android:layout_margin="4dp"/>
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/Haikyuu2"
+                android:src="@drawable/haikyuu2"
                 android:scaleType="centerCrop"
                 android:layout_margin="4dp"/>
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/Haikyuu3"
+                android:src="@drawable/haikyuu3"
                 android:scaleType="centerCrop"
                 android:layout_margin="4dp"/>
         </LinearLayout>

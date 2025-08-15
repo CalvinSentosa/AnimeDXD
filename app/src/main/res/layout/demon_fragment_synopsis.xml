@@ -19,7 +19,9 @@
             android:background="@drawable/framed_background"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:text="Setelah kejadian dari seri TV 'Demon Slayer: Kimetsu no Yaiba'..."
+            android:text="Setelah kejadian dari seri TV `Demon Slayer: Kimetsu no Yaiba`, Tanjiro Kamado bersama adiknya Nezuko, serta dua rekannya Zenitsu dan Inosuke, melanjutkan misi mereka dengan menaiki Mugen Train, sebuah kereta misterius di mana lebih dari 40 orang telah menghilang secara misterius.
+            Mereka bergabung dengan Kyojuro Rengoku, salah satu Hashira (pilar tertinggi pembasmi iblis), yang sedang menyelidiki kejadian di kereta tersebut. Namun, perjalanan mereka berubah menjadi mimpi buruk ketika mereka terjebak dalam ilusi mimpi indah akibat serangan iblis kuat bernama Enmu, salah satu dari Dua Belas Kizuki.
+            Para pembasmi iblis harus melawan tidak hanya musuh dari luar, tetapi juga melawan kelemahan mereka sendiri di dalam mimpi. Pertarungan antara harapan, kenyataan, dan pengorbanan menjadi inti dari cerita, terutama saat mereka menghadapi musuh yang lebih kuat dan cepat daripada yang pernah mereka temui sebelumnya."
             android:elevation="4dp" />
 
     </LinearLayout>

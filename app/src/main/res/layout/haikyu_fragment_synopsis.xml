@@ -19,7 +19,7 @@
             android:background="@drawable/framed_background"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:text="Setelah kejadian dari seri TV 'Demon Slayer: Kimetsu no Yaiba'..."
+            android:text="Setelah menyaksikan pertandingan bola voli di TV, Shoyo Hinata, seorang siswa SMP bertubuh pendek namun penuh semangat, bertekad menjadi pemain voli hebat seperti idolanya, “Raksasa Kecil”. Meski tim SMP-nya kekurangan anggota dan kalah telak di turnamen melawan tim yang dipimpin oleh setter jenius Tobio Kageyama, Hinata tidak menyerah pada mimpinya. Saat memasuki SMA Karasuno, Hinata justru mendapati Kageyama menjadi rekan satu timnya. Awalnya sering berselisih karena perbedaan sifat dan gaya bermain, keduanya perlahan membentuk kerja sama tak terduga yang memadukan kecepatan Hinata dengan presisi Kageyama. Bersama rekan setim lainnya, mereka berusaha mengembalikan kejayaan Karasuno yang dulu dikenal sebagai “Raksasa yang Jatuh”. Perjalanan mereka dipenuhi latihan keras, strategi, dan pertandingan menegangkan melawan tim-tim kuat, di mana setiap kemenangan dan kekalahan menjadi pelajaran berharga. Semangat, persahabatan, dan tekad untuk menembus batas menjadi inti cerita saat mereka melangkah menuju panggung tertinggi bola voli SMA Jepang."
             android:elevation="4dp" />
 
     </LinearLayout>
