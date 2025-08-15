@@ -3,7 +3,7 @@
     android:shape="rectangle">
 
     <!-- 80 = 50% opacity -->
-    <solid android:color="#402535C5" />
+    <solid android:color="#802535C5" />
 
     <corners android:radius="8dp" />
 </shape>
