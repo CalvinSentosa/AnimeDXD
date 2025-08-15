@@ -82,11 +82,11 @@ public class ListFragment extends Fragment {
 
         // Example data for the list
         List<AnimeItem> animeList = new ArrayList<>();
-        animeList.add(new AnimeItem(R.drawable.demonlist, "DEMON SLAYER", 4, "Demon Slayer, atau Kimetsu no Yaiba...", "Horror"));
-        animeList.add(new AnimeItem(R.drawable.haikyuulist, "HAIKYU", 4, "Haikyuu bercerita tentang Shoyo Hinata...", "Sport"));
-        animeList.add(new AnimeItem(R.drawable.jujutsulist, "JUJUTSU KAISEN", 4, "Cerita tentang kutukan dan penyihir...", "Action"));
-        animeList.add(new AnimeItem(R.drawable.hunterlist, "HUNTER X HUNTER", 4, "Hunter x Hunter, adalah hunter x hunter...", "Action"));
-        animeList.add(new AnimeItem(R.drawable.onelist, "ONE PUNCH MAN", 3, "One punch man adalah anime...", "Comedy"));
+        animeList.add(new AnimeItem(R.drawable.demonlist, "DEMON SLAYER", 4, "Demon Slayer, atau Kimetsu no Yaiba, bercerita tentang Tanjiro Kamado, seorang pemuda yang keluarganya dibantai oleh iblis.", "Horror"));
+        animeList.add(new AnimeItem(R.drawable.haikyuulist, "HAIKYU", 4, "Haikyuu bercerita tentang Shoyo Hinata, siswa SMA yang terinspirasi oleh \"Raksasa Kecil\" (The Little Giant) dan bertekad menjadi pemain voli terbaik.", "Sport"));
+        animeList.add(new AnimeItem(R.drawable.jujutsulist, "JUJUTSU KAISEN", 4, "Jujutsu Kaisen adalah serial anime Jepang yang menceritakan Yuji Itadori, seorang siswa SMA yang secara tak sengaja menjadi wadah bagi roh kutukan terkuat bernama Ryomen Sukuna.", "Action"));
+        animeList.add(new AnimeItem(R.drawable.hunterlist, "HUNTER X HUNTER", 4, "Hunter x Hunter adalah cerita tentang seorang anak laki-laki bernama Gon Freecss yang ingin menjadi Hunter untuk menemukan ayahnya, Ging Freecss, seorang Hunter legendaris yang meninggalkannya sejak kecil.", "Action"));
+        animeList.add(new AnimeItem(R.drawable.onelist, "ONE PUNCH MAN", 3, "One Punch Man adalah kisah tentang Saitama, seorang pahlawan super yang mampu mengalahkan semua musuh dengan satu pukulan saja. Ia menjadi bosan karena kurangnya tantangan dalam kekuatan supernya.", "Comedy"));
         listRecyclerView.setAdapter(new AnimeListAdapter(requireContext(), animeList));
         return view;
     }

@@ -32,11 +32,12 @@
                 <!-- ImageView as background -->
                 <ImageView
                     android:id="@+id/header_image"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:adjustViewBounds="false"
-                    android:src="@drawable/one1" />
+                    android:layout_width="410dp"
+                    android:layout_height="wrap_content"
+                    android:scaleY="1.3"
+                    android:scaleX="1.3"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/one" />
 
                 <!-- Foreground background color (with opacity maybe) -->
                 <View
@@ -94,7 +95,7 @@
             app:tabGravity="fill"
             app:tabMode="fixed"
             app:tabRippleColor="@android:color/transparent"
-            app:tabTextColor="@color/demon_tab_text_color"
+            app:tabTextColor="@color/white"
             app:tabSelectedTextColor="@android:color/white"
             app:tabIndicatorHeight="0dp" />
 

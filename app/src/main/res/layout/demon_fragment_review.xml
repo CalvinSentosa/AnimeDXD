@@ -233,7 +233,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Saya menontonnya kemarin. Jujur saja..."
+                        android:text="Saya menontonnya kemarin. Jujur saja, hasilnya melebihi ekspektasi saya, seperti biasa. Saya sangat mencintai karya ini."
                         android:textColor="@android:color/black"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -301,7 +301,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Saya menontonnya kemarin. Jujur saja..."
+                        android:text="Saya menontonnya kemarin. Jujur saja, hasilnya melebihi ekspektasi saya, seperti biasa. Saya sangat mencintai karya ini."
                         android:textColor="@android:color/black"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -369,7 +369,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Saya menontonnya kemarin. Jujur saja..."
+                        android:text="Saya menontonnya kemarin. Jujur saja, hasilnya melebihi ekspektasi saya, seperti biasa. Saya sangat mencintai karya ini."
                         android:textColor="@android:color/black"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -437,7 +437,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Saya menontonnya kemarin. Jujur saja..."
+                        android:text="Saya menontonnya kemarin. Jujur saja, hasilnya melebihi ekspektasi saya, seperti biasa. Saya sangat mencintai karya ini."
                         android:textColor="@android:color/black"
                         android:textSize="14sp" />
                 </LinearLayout>

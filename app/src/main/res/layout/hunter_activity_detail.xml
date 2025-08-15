@@ -32,12 +32,13 @@
                 <!-- ImageView as background -->
                 <ImageView
                     android:id="@+id/header_image"
-                    android:layout_width="450dp"
-                    android:layout_height="200dp"
-                    android:scaleType="centerCrop"
-                    android:rotation="270"
+                    android:layout_width="410dp"
+                    android:layout_height="wrap_content"
+                    android:scaleY="2.1"
+                    android:scaleX="2.1"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/hunterlist" />
+                    android:rotation="270"
+                    android:src="@drawable/hunter" />
 
                 <!-- Foreground background color (with opacity maybe) -->
                 <View
@@ -97,7 +98,7 @@
             app:tabMode="fixed"
             app:tabRippleColor="@android:color/transparent"
             app:tabSelectedTextColor="@android:color/white"
-            app:tabTextColor="@color/demon_tab_text_color" />
+            app:tabTextColor="@color/white" />
 
 
         <!-- ViewPager2 -->
