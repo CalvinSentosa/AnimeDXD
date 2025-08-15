@@ -40,21 +40,21 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/slide2"
+                android:src="@drawable/jjk3"
                 android:scaleType="centerCrop"
                 android:layout_margin="4dp"/>
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/slide3"
+                android:src="@drawable/jjk2"
                 android:scaleType="centerCrop"
                 android:layout_margin="4dp"/>
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/slide4"
+                android:src="@drawable/jjk1"
                 android:scaleType="centerCrop"
                 android:layout_margin="4dp"/>
         </LinearLayout>
