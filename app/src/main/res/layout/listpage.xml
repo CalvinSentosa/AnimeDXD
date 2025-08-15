@@ -24,7 +24,8 @@
             android:id="@+id/carouselViewPager2"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="12dp"/>
 
         <!-- Header Title -->
         <TextView
@@ -37,7 +38,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="15dp"/>
 
         <!-- Anime List -->
         <androidx.recyclerview.widget.RecyclerView
