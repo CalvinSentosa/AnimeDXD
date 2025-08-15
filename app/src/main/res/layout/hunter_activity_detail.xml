@@ -37,7 +37,7 @@
                     android:scaleType="centerCrop"
                     android:rotation="270"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/hunter" />
+                    android:src="@drawable/hunterlist" />
 
                 <!-- Foreground background color (with opacity maybe) -->
                 <View

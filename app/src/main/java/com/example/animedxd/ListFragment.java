@@ -78,11 +78,11 @@ public class ListFragment extends Fragment {
 
         // Example data for the list
         List<AnimeItem> animeList = new ArrayList<>();
-        animeList.add(new AnimeItem(R.drawable.demonslayer, "DEMON SLAYER", 4, "Demon Slayer, atau Kimetsu no Yaiba...", "Horror"));
-        animeList.add(new AnimeItem(R.drawable.haikyu_manga, "HAIKYU", 4, "Haikyuu bercerita tentang Shoyo Hinata...", "Sport"));
-        animeList.add(new AnimeItem(R.drawable.jujutsu, "JUJUTSU KAISEN", 4, "Cerita tentang kutukan dan penyihir...", "Action"));
-        animeList.add(new AnimeItem(R.drawable.demonslayer, "HUNTER X HUNTER", 4, "Hunter x Hunter, adalah hunter x hunter...", "Action"));
-        animeList.add(new AnimeItem(R.drawable.demonslayer, "ONE PUNCH MAN", 3, "One punch man adalah anime...", "Comedy"));
+        animeList.add(new AnimeItem(R.drawable.demonlist, "DEMON SLAYER", 4, "Demon Slayer, atau Kimetsu no Yaiba...", "Horror"));
+        animeList.add(new AnimeItem(R.drawable.haikyuulist, "HAIKYU", 4, "Haikyuu bercerita tentang Shoyo Hinata...", "Sport"));
+        animeList.add(new AnimeItem(R.drawable.jujutsulist, "JUJUTSU KAISEN", 4, "Cerita tentang kutukan dan penyihir...", "Action"));
+        animeList.add(new AnimeItem(R.drawable.hunterlist, "HUNTER X HUNTER", 4, "Hunter x Hunter, adalah hunter x hunter...", "Action"));
+        animeList.add(new AnimeItem(R.drawable.onelist, "ONE PUNCH MAN", 3, "One punch man adalah anime...", "Comedy"));
         listRecyclerView.setAdapter(new AnimeListAdapter(requireContext(), animeList));
         return view;
     }
