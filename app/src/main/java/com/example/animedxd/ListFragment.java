@@ -42,11 +42,11 @@ public class ListFragment extends Fragment {
         View view = inflater.inflate(R.layout.listpage, container, false);
 
         ViewPager2 carouselViewPager = view.findViewById(R.id.carouselViewPager2);
-        List<Integer> imageList = Arrays.asList(R.drawable.slide1,
-                                                R.drawable.slide2,
-                                                R.drawable.slide3,
-                                                R.drawable.slide4,
-                                                R.drawable.slide5);
+        List<Integer> imageList = Arrays.asList(R.drawable.carousel1,
+                                                R.drawable.carousel2,
+                                                R.drawable.carousel3,
+                                                R.drawable.carousel4,
+                                                R.drawable.carousel5);
         CarouselAdapter adapter = new CarouselAdapter(imageList);
         carouselViewPager.setAdapter(adapter);
 
