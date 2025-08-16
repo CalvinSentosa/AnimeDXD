@@ -14,7 +14,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 public class DemonDetailActivity extends AppCompatActivity {
 
-    String[] titles = {"Synopsis", "Review", "Clip"};
+    String[] titles = {"Synopsis", "Review", "Detail"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

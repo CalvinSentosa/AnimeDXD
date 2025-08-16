@@ -448,7 +448,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="24dp"
-            android:backgroundTint="@android:color/holo_orange_light"
+            android:backgroundTint="#FFCD68"
             android:text="Add"
             android:textColor="@android:color/white" />
     </LinearLayout>
