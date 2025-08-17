@@ -30,7 +30,7 @@ public class HomeFragment extends Fragment{
 
         TextView welcomeText = view.findViewById(R.id.welcomeText);
         String username = getActivity().getIntent().getStringExtra("USERNAME");
-        welcomeText.setText("Welcome, " + username);
+        welcomeText.setText(username);
 
         ImageView iconMenu = view.findViewById(R.id.iconMenu);
         LinearLayout logoutContainer = view.findViewById(R.id.logoutContainer);

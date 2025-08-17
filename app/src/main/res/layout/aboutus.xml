@@ -52,23 +52,40 @@
                     android:layout_height="wrap_content"
                     android:text="LOGOUT"
                     android:textSize="18sp"
-                    android:paddingStart="8dp" />
+                    android:paddingStart="8dp"
+                    android:fontFamily="@font/poppins"/>
             </LinearLayout>
 
         </LinearLayout>
 
-        <!-- Welcome text -->
-        <TextView
-            android:id="@+id/welcomeText"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome, Calvin"
-            android:textAlignment="center"
-            android:textSize="35sp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"/>
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, "
+                android:textAlignment="center"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/impact"/>
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/impact"/>
+        </LinearLayout>
 
         <!-- Logo image -->
         <ImageView
@@ -88,7 +105,8 @@
             android:textSize="15sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins"/>
 
         <!-- 2 Fitur di atas -->
         <LinearLayout
@@ -104,7 +122,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:layout_marginRight="10dp">
 
                 <ImageView
                     android:layout_width="60dp"
@@ -117,8 +136,9 @@
                     android:text="🎬 Streaming Cepat dan Jernih\nNonton anime kualitas HD tanpa buffering."
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:textSize="13sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textSize="11sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins"/>
             </LinearLayout>
 
             <!-- Fitur Judul Anime -->
@@ -140,8 +160,9 @@
                     android:text="📚 Ribuan Judul Anime\nDari anime populer hingga terbaru,\nlengkap dengan sinopsis."
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:textSize="13sp"
-                    android:layout_marginTop="8dp"/>
+                    android:textSize="10.4sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -165,8 +186,9 @@
                 android:text="⏱️ Update Cepat\nEpisode baru tersedia segera setelah rilis resmi.\nNggak bakal ketinggalan!"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:textSize="13sp"
-                android:layout_marginTop="8dp"/>
+                android:textSize="11sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins"/>
         </LinearLayout>
     </LinearLayout>
 

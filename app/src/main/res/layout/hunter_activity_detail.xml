@@ -64,13 +64,13 @@
                 android:text="Movie\nReview"
                 android:textColor="@android:color/white"
                 android:textSize="32sp"
-                android:textStyle="bold"
                 android:shadowColor="#80000000"
                 android:shadowDx="2"
                 android:shadowDy="2"
                 android:shadowRadius="4"
                 android:paddingLeft="20dp"
-                android:paddingTop="50dp"/>
+                android:paddingTop="50dp"
+                android:fontFamily="@font/impact"/>
         </FrameLayout>
 
         <!-- Anime title -->
@@ -83,7 +83,8 @@
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="@android:color/white"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/impact"/>
 
         <!-- Tab Layout -->
         <com.google.android.material.tabs.TabLayout
@@ -98,7 +99,8 @@
             app:tabMode="fixed"
             app:tabRippleColor="@android:color/transparent"
             app:tabSelectedTextColor="@android:color/white"
-            app:tabTextColor="@color/white" />
+            app:tabTextColor="@color/white"
+            app:tabTextAppearance="@style/CustomTabText2"/>
 
 
         <!-- ViewPager2 -->

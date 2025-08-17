@@ -18,7 +18,8 @@
             android:layout_margin="16dp"
             android:background="@drawable/framed_background"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins"
             android:text="Judul: Demon Slayer: Kimetsu no Yaiba\nGenre: Action, Supernatural, Dark Fantasy\nTanggal Rilis: 6 April 2019\nSutradara: Haruo Sotozaki\nCerita Oleh: Koyoharu Gotouge\nKarakter: Tanjiro Kamado, Nezuko Kamado, Zenitsu Agatsuma, Inosuke Hashibira, Giyu Tomioka\nDurasi: Sekitar 23 menit per episode"
             android:elevation="4dp" />
 

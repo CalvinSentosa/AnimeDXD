@@ -20,7 +20,8 @@
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:text="Setelah lulus ujian Hunter yang penuh tantangan, Gon Freecss melanjutkan perjalanannya untuk menemukan ayahnya, Ging, seorang Hunter legendaris. Bersama teman-temannya—Killua, Kurapika, dan Leorio—mereka terlibat dalam berbagai misi berbahaya yang menguji kekuatan, kecerdikan, dan moral mereka. Dalam salah satu petualangan, Gon dan Killua terjerat dalam dunia berbahaya permainan “Greed Island” yang diciptakan oleh para Hunter, di mana setiap langkah salah bisa berarti kematian. Sementara itu, Kurapika memulai misi pribadinya untuk membalas dendam kepada Genei Ryodan, kelompok kriminal yang membantai klannya demi mata berharga mereka. Perjalanan ini membawa mereka menghadapi lawan-lawan yang tak hanya kuat secara fisik, tetapi juga licik dan penuh intrik. Persahabatan, ambisi, dan tekad untuk terus maju menjadi bahan bakar mereka, meski rintangan semakin mematikan."
-            android:elevation="4dp" />
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins"/>
 
     </LinearLayout>
 </ScrollView>

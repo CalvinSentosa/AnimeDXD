@@ -18,7 +18,7 @@
             android:layout_margin="16dp"
             android:background="@drawable/framed_background"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:text="Judul: Hunter x Hunter
 Genre: Action, Adventure, Fantasy, Shounen
 Tanggal Rilis: 2 Oktober 2011
@@ -26,7 +26,8 @@ Sutradara: Hiroshi Kōjina
 Cerita Oleh: Yoshihiro Togashi
 Karakter: Gon Freecss, Killua Zoldyck, Kurapika, Leorio, Hisoka
 Durasi: Sekitar 23 menit per episode (Total 148 episode)"
-            android:elevation="4dp" />
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins"/>
 
         <!-- Sample YouTube thumbnail or embedded video (WebView or YouTubePlayerView) -->
         <ImageView

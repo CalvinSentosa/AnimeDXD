@@ -165,7 +165,8 @@
                 android:textSize="45sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/white"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"/>
 
         </LinearLayout>
 
@@ -231,8 +232,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Saya menontonnya kemarin. Jujur saja, hasilnya melebihi ekspektasi saya, seperti biasa. Saya sangat mencintai karya ini."
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp" />
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -242,7 +244,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -299,8 +301,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Saya menontonnya kemarin. Jujur saja, hasilnya melebihi ekspektasi saya, seperti biasa. Saya sangat mencintai karya ini."
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp" />
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -310,7 +313,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -367,8 +370,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Saya menontonnya kemarin. Jujur saja, hasilnya melebihi ekspektasi saya, seperti biasa. Saya sangat mencintai karya ini."
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp" />
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -378,7 +382,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -435,8 +439,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Saya menontonnya kemarin. Jujur saja, hasilnya melebihi ekspektasi saya, seperti biasa. Saya sangat mencintai karya ini."
-                        android:textColor="@android:color/black"
-                        android:textSize="14sp" />
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -450,6 +455,7 @@
             android:layout_marginTop="24dp"
             android:backgroundTint="#FF31A423"
             android:text="Add"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins"/>
     </LinearLayout>
 </ScrollView>

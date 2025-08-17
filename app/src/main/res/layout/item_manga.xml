@@ -33,8 +33,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TITLE"
-                android:textStyle="bold"
-                android:textSize="16sp" />
+                android:textSize="20sp"
+                android:fontFamily="@font/impact"/>
 
             <TextView
                 android:id="@+id/genreManga"
@@ -42,7 +42,8 @@
                 android:layout_height="wrap_content"
                 android:text="Genre"
                 android:textColor="#555555"
-                android:textStyle="italic" />
+                android:fontFamily="@font/poppins"
+                android:textSize="14sp"/>
 
             <TextView
                 android:id="@+id/descManga"
@@ -51,8 +52,9 @@
                 android:text="Description here"
                 android:maxLines="5"
                 android:ellipsize="end"
-                android:textSize="14sp"
-                android:textColor="#444" />
+                android:textSize="12sp"
+                android:textColor="#444"
+                android:fontFamily="@font/papyrus"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

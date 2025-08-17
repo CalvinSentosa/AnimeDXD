@@ -18,7 +18,7 @@
             android:layout_margin="16dp"
             android:background="@drawable/framed_background"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:text="Judul: Haikyuu!!
 Genre: Sports, Comedy, Drama
 Tanggal Rilis: 6 April 2014
@@ -27,7 +27,8 @@ Cerita Oleh: Haruichi Furudate
 Karakter: Shoyo Hinata, Tobio Kageyama, Daichi Sawamura, Koshi Sugawara, Kei Tsukishima
 Durasi: Sekitar 24 menit per episode (Total 85 episode)
 "
-            android:elevation="4dp"/>
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins"/>
 
         <!-- Sample YouTube thumbnail or embedded video (WebView or YouTubePlayerView) -->
         <ImageView

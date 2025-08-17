@@ -55,7 +55,8 @@
                         android:layout_height="wrap_content"
                         android:text="LOGOUT"
                         android:textSize="18sp"
-                        android:paddingStart="8dp" />
+                        android:paddingStart="8dp"
+                        android:fontFamily="@font/poppins"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -70,17 +71,34 @@
             </ImageView>
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/welcomeText"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome, Calvin"
-            android:textAlignment="center"
-            android:textSize="35sp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"/>
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, "
+                android:textAlignment="center"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/impact"/>
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/impact"/>
+        </LinearLayout>
 
         <!-- Tabs -->
         <com.google.android.material.tabs.TabLayout
@@ -90,10 +108,11 @@
             android:layout_margin="8dp"
             android:background="@drawable/tablayout_background"
             android:contentDescription="Tab navigation for News and Manga"
-            app:tabTextColor="@color/black"
             app:tabSelectedTextColor="#FF84A1"
             app:tabBackground="@drawable/tab_background_selector"
-            app:tabIndicatorHeight="0dp" />
+            app:tabIndicatorHeight="0dp"
+            app:tabTextAppearance="@style/CustomTabText"
+            />
 
         <!-- Tab Content -->
         <androidx.viewpager2.widget.ViewPager2

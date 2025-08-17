@@ -31,7 +31,8 @@
                 android:layout_height="wrap_content"
                 android:text="Cecilia Oktaviana"
                 android:textColor="@android:color/white"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"/>
 
             <RatingBar
                 android:id="@+id/ratingBar"
@@ -51,7 +52,8 @@
         android:hint="Please Enter Your Comment..."
         android:gravity="top"
         android:background="@android:color/white"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:fontFamily="@font/poppins"/>
 
     <!-- Error text -->
     <TextView
@@ -74,13 +76,15 @@
             android:id="@+id/btnCancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cancel" />
+            android:text="Cancel"
+            android:fontFamily="@font/poppins"/>
 
         <Button
             android:id="@+id/btnUpload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Upload"
-            android:layout_marginStart="8dp" />
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins"/>
     </LinearLayout>
 </LinearLayout>

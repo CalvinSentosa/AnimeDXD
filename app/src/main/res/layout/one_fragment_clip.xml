@@ -18,7 +18,7 @@
             android:layout_margin="16dp"
             android:background="@drawable/framed_background"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:text="Judul: One Punch Man
 Genre: Action, Comedy, Superhero, Sci-Fi
 Tanggal Rilis: 5 Oktober 2015
@@ -26,7 +26,8 @@ Sutradara: Shingo Natsume, Chikara Sakurai
 Cerita Oleh: ONE (webcomic), Yusuke Murata (manga adaptation)
 Karakter: Saitama, Genos, Speed-o'-Sound Sonic, Mumen Rider
 Durasi: Sekitar 24 menit per episode"
-            android:elevation="4dp" />
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins"/>
 
         <!-- Sample YouTube thumbnail or embedded video (WebView or YouTubePlayerView) -->
         <ImageView

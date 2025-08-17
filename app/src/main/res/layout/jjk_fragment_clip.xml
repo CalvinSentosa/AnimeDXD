@@ -18,7 +18,7 @@
             android:layout_margin="16dp"
             android:background="@drawable/framed_background"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
+            android:textSize="12sp"
             android:text="Judul: Jujutsu Kaisen
 Genre: Action, Supernatural, Dark Fantasy
 Tanggal Rilis: 3 Oktober 2020
@@ -26,7 +26,8 @@ Sutradara: Sunghoo Park (Season 1), Shōta Goshozono (Season 2)
 Cerita Oleh: Gege Akutami
 Karakter: Yuji Itadori, Megumi Fushiguro, Nobara Kugisaki, Satoru Gojo, Sukuna
 Durasi: Sekitar 23 menit per episode "
-            android:elevation="4dp" />
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins"/>
 
         <!-- Sample YouTube thumbnail or embedded video (WebView or YouTubePlayerView) -->
         <ImageView

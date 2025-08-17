@@ -20,7 +20,8 @@
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:text="Di dunia yang dipenuhi monster dan ancaman super, Saitama adalah pahlawan yang tampak biasa namun memiliki kekuatan luar biasa: ia bisa mengalahkan musuh apapun dengan satu pukulan. Meski kekuatannya tak tertandingi, Saitama justru merasa bosan karena tidak ada pertarungan yang mampu memicu adrenalin atau memberi tantangan. Bergabung dengan Asosiasi Pahlawan, ia bertemu dengan berbagai pahlawan lain, termasuk cyborg serius bernama Genos yang menjadi muridnya. Bersama-sama, mereka menghadapi serangan monster raksasa, penjahat super, hingga ancaman antarplanet. Namun, di balik kekonyolan dan aksi spektakuler, Saitama terus mencari sesuatu yang lebih dari sekadar kemenangan instan—ia mencari arti sejati menjadi pahlawan, sekaligus lawan yang dapat membangkitkan semangat bertarungnya."
-            android:elevation="4dp" />
+            android:elevation="4dp"
+            android:fontFamily="@font/poppins"/>
 
     </LinearLayout>
 </ScrollView>

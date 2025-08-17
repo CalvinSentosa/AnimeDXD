@@ -63,26 +63,27 @@
                 android:text="Movie\nReview"
                 android:textColor="@android:color/white"
                 android:textSize="32sp"
-                android:textStyle="bold"
                 android:shadowColor="#80000000"
                 android:shadowDx="2"
                 android:shadowDy="2"
                 android:shadowRadius="4"
                 android:paddingLeft="20dp"
-                android:paddingTop="50dp"/>
+                android:paddingTop="50dp"
+                android:fontFamily="@font/impact"/>
         </FrameLayout>
 
         <!-- Anime title -->
         <TextView
             android:id="@+id/animeTitle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ONE PUNCH MAN"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/impact"
             android:gravity="center"
+            android:text="ONE PUNCH MAN"
             android:textColor="@android:color/white"
-            android:layout_marginTop="12dp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <!-- Tab Layout -->
         <com.google.android.material.tabs.TabLayout
@@ -97,7 +98,8 @@
             app:tabRippleColor="@android:color/transparent"
             app:tabTextColor="@color/white"
             app:tabSelectedTextColor="@android:color/white"
-            app:tabIndicatorHeight="0dp" />
+            app:tabIndicatorHeight="0dp"
+            app:tabTextAppearance="@style/CustomTabText2"/>
 
 
         <!-- ViewPager2 -->
