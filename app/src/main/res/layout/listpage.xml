@@ -28,19 +28,20 @@
             android:layout_marginTop="12dp"/>
 
         <!-- Header Title -->
+
+        <!-- Anime List -->
         <TextView
             android:id="@+id/welcomeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="AnimeDXD List"
-            android:textAlignment="center"
-            android:textSize="35sp"
-            android:textColor="@color/white"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
-            android:fontFamily="@font/impact"/>
+            android:fontFamily="@font/impact"
+            android:text="AnimeDXD List"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
 
-        <!-- Anime List -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/animeRecyclerView"
             android:layout_width="match_parent"
